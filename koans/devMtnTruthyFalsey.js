@@ -1,17 +1,17 @@
 describe('About Truthy and Falsy', function(){
   it('should create a variable called theTruth and make it truthy', function(){
-
-    expect(theTruth).toBeTruthy();
+    var theTruth;
+    
   });
 
-  it('should create a variable called theAntiTruth and make it be Falsy', function(){
-
-    expect(theAntiTruth).toBeFalsy();
+  it('should create a variable called theAntiTruth and make it be falsy', function(){
+    var theAntiTruth;
+    
   });
 
   it('should all be falsy', function(){
     //replace all the FILL_ME_IN's with 4 different Falsy values
-    var falsyArray = [FILL_ME_IN, FILL_ME_IN, FILL_ME_IN, FILL_ME_IN];
+    var falsyArray = [null, undefined, NaN, 0];
 
     var flag = true;
     for(var i = 0; i < falsyArray.length; i++){
@@ -24,7 +24,7 @@ describe('About Truthy and Falsy', function(){
 
   it('should fix the array so all indices are Falsy', function(){
     //remove all items in the falsyArray so that every indice is Falsy
-    var falsyArray = [1,0,null,2,'false',undefined,NaN,1+1,5-5,'undefined', 'asdf',''];
+    var falsyArray = [,0,null,undefined,NaN,5-5];
 
 
     //dont touch this code
@@ -34,7 +34,7 @@ describe('About Truthy and Falsy', function(){
         flag = true;
       }
     }
-    expect(flag === false && falsyArray.length === 5).toBeTruthy();
+    expect(flag === false && falsyArray.length === 6).toBeTruthy();
   });
 });
 

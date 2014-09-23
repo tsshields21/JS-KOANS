@@ -1,6 +1,6 @@
 describe("About variables and If Statments", function() {
   it("should create a variable called myFirstVariable and set it equal to 1", function() {
-    //code goes here.
+    var mfFirstVariable()
     expect(myFirstVariable).toBe(1);
   });
 
